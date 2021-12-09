@@ -250,25 +250,5 @@ class SayCommandBuilder(CommandBuilder):
 """
 
 
-X = input("how many times you want give command")
-for(i=0;i<X;i++)
-
-x=str(input())
-y=float(input())
-z=float(input())
-
-motor(MotorId.x, y, z),  # move the eyebrow motor to position 0.0 in 0.5 seconds
-wait_for_motors(),  # wait until previous motor command has finished
-wait(0.1),  # wait for a time
-
-robot.do(
-
-    say("Raise Eyebrows"),
-    wait(1.0),
-    cheeky_eyebrow_raise_cmd,
-    cheeky_eyebrow_raise_cmd,
-    
-)
-
 
 
